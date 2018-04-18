@@ -1,2 +1,2 @@
 # UPC
-Build a UPC label.  Since this code includes a check digit, it's known as a UPC-A.
+Build a UPC-A label.  Here is a link on how it's made -- https://www.quora.com/How-do-barcodes-work-1
