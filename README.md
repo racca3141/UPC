@@ -1,10 +1,10 @@
 # UPC
 Build a UPC-A label.  Here is a link on how it's made -- https://www.quora.com/How-do-barcodes-work-1
+
 Here is another useful link -- https://www.wikihow.com/Read-12-Digit-UPC-Barcodes
 
 
-//from left to right where b is a single black line
-//and w is a single white line
+//from left to right where b is a single black line and w is a single white line:
 
 //bar left
 
@@ -48,8 +48,8 @@ Here is another useful link -- https://www.wikihow.com/Read-12-Digit-UPC-Barcode
 		  2) add all EVEN places.  (5 numbers)
 		  3) add the numbers from steps 1 and 2.
 		  4) the check number is obtained by subtracting the number
-                     of step 3 (called S) from the next higher multiple of 10.
-			moduloNumber = 10 - (S % 10)
+                 of step 3 (called S) from the next higher multiple of 10.
+				checkDigit = 10 - (S % 10)
 	
 //bar right
 
