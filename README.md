@@ -1,4 +1,4 @@
-# UPC
+ # UPC
 Build a UPC-A label.  Here is a link on how it's made -- https://www.quora.com/How-do-barcodes-work-1
 
 Here is another useful link -- https://www.wikihow.com/Read-12-Digit-UPC-Barcodes
@@ -44,7 +44,7 @@ Here is another useful link -- https://www.wikihow.com/Read-12-Digit-UPC-Barcode
 	
 	see above for pattern
 	
-	compute:  1) for the 11 digits, add all ODD places. (6 numbers)
+	compute:  1) for the 11 digits, add all ODD places. (6 numbers). multiply by 3.
 		  2) add all EVEN places.  (5 numbers)
 		  3) add the numbers from steps 1 and 2.
 		  4) the check number is obtained by subtracting the number
