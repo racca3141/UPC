@@ -14,6 +14,8 @@ as a valid UPC-A.
 
 ![image](https://user-images.githubusercontent.com/31526815/39022180-26cc67c0-43e9-11e8-9b70-33994151fe0b.png)
 
+Using mobile Bing's Barcode Scanner, it correctly identifies that barcode above as Staple's glue.
+
 Design Notes:
 
 //from left to right where b is a single black line and w is a single white line:
