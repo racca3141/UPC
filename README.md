@@ -4,6 +4,13 @@ Build a UPC-A label.  Here is a link on how it's made -- https://www.quora.com/H
 Here is another useful link -- https://www.wikihow.com/Read-12-Digit-UPC-Barcodes
 
 
+UPCMain.java is a command line program that takes in a 12 digit number and checks to see if it is a valid UPC-A barcode.
+It does this by comparing the entered check digit (the 12th digit) with what it should be by computation.  The program
+also gets the substrings for the first 6 digits and the second 5 digits of the barcode.  These substrings are treated
+differently when laying out the barcode image.  See below in the Design Notes.
+
+Design Notes:
+
 //from left to right where b is a single black line and w is a single white line:
 
 //bar left
