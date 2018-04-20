@@ -5,13 +5,21 @@
 import javax.swing.*;
 import java.awt.*;
 import java.util.*;
+import java.util.Scanner;
 
 public class UPCDraw extends JPanel{
 
 	private static int[] upc;
+	private String upcString;
+	private int x, y;
 
 	public UPCDraw(String bc){
+		
+		x = 30;
+		y = 30;		
+
 		upc = new int[12];
+		upcString = bc;
 		int bcBit;
 		for(int c = 0; c < 12; c++){
 
@@ -36,7 +44,7 @@ public class UPCDraw extends JPanel{
 			else
 				g.setColor(Color.white);
 
-			g.drawLine(10 + colCount, 20, 10 + colCount, 20 + high);
+			g.drawLine(x + colCount, y, x + colCount, y + high);
 			colCount++;
 		}
 		
@@ -49,7 +57,7 @@ public class UPCDraw extends JPanel{
 				if(bitCode.equals("b")) g.setColor(Color.black);
 				if(bitCode.equals("w")) g.setColor(Color.white);
 			
-				g.drawLine(10 + colCount, 20, 10 + colCount, 20 + high);
+				g.drawLine(x + colCount, y, x + colCount, y + high);
 				colCount++;
 			}
 		}
@@ -61,7 +69,7 @@ public class UPCDraw extends JPanel{
 			else
 				g.setColor(Color.white);
 
-			g.drawLine(10 + colCount, 20, 10 + colCount, 20 + high);
+			g.drawLine(x + colCount, y, x + colCount, y + high);
 			colCount++;
 		}
 
@@ -74,7 +82,7 @@ public class UPCDraw extends JPanel{
 				if(bitCode.equals("b")) g.setColor(Color.black);
 				if(bitCode.equals("w")) g.setColor(Color.white);
 			
-				g.drawLine(10 + colCount, 20, 10 + colCount, 20 + high);
+				g.drawLine(x + colCount, y, x + colCount, y + high);
 				colCount++;
 			}
 		}
@@ -87,9 +95,12 @@ public class UPCDraw extends JPanel{
 			else
 				g.setColor(Color.white);
 
-			g.drawLine(10 + colCount, 20, 10 + colCount, 20 + high);
+			g.drawLine(x + colCount, y, x + colCount, y + high);
 			colCount++;
 		}
+
+		g.drawRect(x - 5, y - 5, 105, 55);
+		g.drawString(upcString, x + 5, y + 45);
 
 		System.out.println(colCount);  //should be 95 columns
 	}
@@ -129,10 +140,14 @@ public class UPCDraw extends JPanel{
 		}
 
 		return bitPattern;
+
 	}
 	
 	public static void main(String[] args){
-		String UPC = "718103124775";
+		Scanner reader = new Scanner(System.in);
+		System.out.print("Enter a barcode: ");
+		String UPC = reader.nextLine();
+		//String UPC = "718103124775";
 		JFrame GUI = new JFrame();
 		//std
 		GUI.setSize(200, 200);
