@@ -12,7 +12,7 @@ differently when laying out the barcode image.  See below in the Design Notes.
 UPCDraw.java takes in a 12 digit UPC string and draws it.  It can be combined with UPCMain.java to verify the 12 digit 
 as a valid UPC-A.
 
-![image](https://user-images.githubusercontent.com/31526815/39022180-26cc67c0-43e9-11e8-9b70-33994151fe0b.png)
+![image](https://user-images.githubusercontent.com/31526815/39031002-7da40662-441a-11e8-9e8c-bd89c9e26f7e.png)
 
 Using mobile Bing's Barcode Scanner, it correctly identifies that barcode above as Staple's glue.
 
