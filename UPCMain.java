@@ -63,7 +63,7 @@ public class UPCMain{
 						
 					}
 					//System.out.println(evenSum + " e o " + oddSum);
-					checkDigitComputed = 10 - (((oddSum * 3) + evenSum) % 10);
+					checkDigitComputed = (10 - (((oddSum * 3) + evenSum) % 10)) % 10;
 					System.out.println(checkDigitComputed + "<-----checkDigitComputed");
 					checkDigitGiven = Integer.parseInt(upc.substring(11, 12));
 					System.out.println(checkDigitGiven + "<---------checkDigitGiven");
