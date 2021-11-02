@@ -3,6 +3,8 @@ Build a UPC-A label.  Here is a link on how it's made -- https://www.quora.com/H
 
 Here is another useful link -- https://www.wikihow.com/Read-12-Digit-UPC-Barcodes
 
+And still another -- https://en.wikipedia.org/wiki/Universal_Product_Code
+
 
 UPCMain.java is a command line program that takes in a 12 digit number and checks to see if it is a valid UPC-A barcode.
 It does this by comparing the entered check digit (the 12th digit) with what it should be by computation.  The program
@@ -13,6 +15,8 @@ UPCDraw.java takes in a 12 digit UPC string and draws it.  It can be combined wi
 as a valid UPC-A.
 
 ![image](https://user-images.githubusercontent.com/31526815/39031002-7da40662-441a-11e8-9e8c-bd89c9e26f7e.png) ![image](https://user-images.githubusercontent.com/31526815/39031414-d2146bb8-441c-11e8-8342-583fa6c0f888.png)
+
+
 
 Using mobile Bing's Barcode Scanner, it correctly identifies that barcode above as Staple's glue.  One is in "BADASS_GREEN".
 
